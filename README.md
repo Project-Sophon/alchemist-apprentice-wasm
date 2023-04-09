@@ -14,7 +14,9 @@ This will output a ./out/ directory in that repo's directory. Next copy over `./
 ```bash
 cd ..
 rm -rf ./alchemist_apprentice-wasm/out
+rm -rf ./alchemist_apprentice-wasm/assets
 cp -R ./alchemist_apprentice/out ./alchemist_apprentice-wasm/out
+cp -R ./alchemist_apprentice/assets ./alchemist_apprentice-wasm/assets
 cd alchemist_apprentice-wasm
 git stage .
 git commit -m "<release_version>"
